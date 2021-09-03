@@ -1,0 +1,33 @@
+/* ////////Початок Завдання 3////// */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#gallery {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  /* grid-template-columns: repeat(2, auto); */
+}
+
+li > img {
+  width: 630px;
+  height: auto;
+}
+/* ////////Кінець Завдання 3////// */
+
+/* ////////Початок Завдання 6////// */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+/* ////////Кінець Завдання 6////// */
