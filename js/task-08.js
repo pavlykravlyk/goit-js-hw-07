@@ -9,14 +9,12 @@ const createBoxes = amount => {
   amount = Number(input.value);
   let boxSize = 30;
 
-  const boxString = [...Array(amount)]
+  boxes.innerHTML = [...Array(amount)]
     .map(() => {
       boxSize += 10;
       return `<div style="width: ${boxSize}px; height: ${boxSize}px; background-color: ${randomColor()};" ></div>`;
     })
     .join('');
-
-  boxes.insertAdjacentHTML('beforeend', boxString);
 };
 
 const destroyBoxes = () => {
